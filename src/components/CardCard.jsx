@@ -13,10 +13,10 @@ const CardCard = (props) => {
   return (
     <div className="card" key={cardNum}>
       <div className="card-information">
-        <span className="card-information__text">Number: {cardNum}</span>
-        <span className="card-information__text">Date: {cardDate}</span>
-        <span className="card-information__text">CVV: {cardCVV}</span>
-        <span className="card-information__text">Full name: {cardOwner}</span>
+        <span className="card-information__text">{cardNum}</span>
+        <span className="card-information__text">{cardDate}</span>
+        <span className="card-information__text">{cardCVV}</span>
+        <span className="card-information__text">{cardOwner}</span>
         <button
           className="card__delete-btn"
           onClick={() => {

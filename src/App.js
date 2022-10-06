@@ -3,8 +3,6 @@ import CardFillBlock from "./components/CardFillBlock";
 import CardField from "./components/CardField";
 import CardCard from "./components/CardCard";
 
-import { Routes, Route, Link } from "react-router-dom";
-
 import "./styles/style.css";
 function App() {
   const [carfolderName, setCardFolderName] = useState("Card Viewer");
