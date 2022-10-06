@@ -23,7 +23,7 @@ const CardCard = (props) => {
             deleteFunc(cardNum);
           }}
         >
-          Delete
+          <i class="material-icons">delete</i>
         </button>
       </div>
       <div className="card-additional-information">
@@ -44,25 +44,25 @@ const CardCard = (props) => {
                   <div
                     style={{
                       display: "flex",
-                      justifyContent: "space-between",
+                      justifyContent: "flex-end",
                       alignItems: "center",
+                      gap: "5px",
                     }}
                   >
                     {element}
                     <button
                       style={{
                         backgroundColor: "transparent",
-                        padding: "3px 7px",
                         fontWeight: "700",
                         color: "rgb(255, 255, 255, 0.2)",
-                        border: "1px solid rgb(255, 255, 255, 0.2)",
-                        borderRadius: "5px",
+                        border: "none",
+                        fontSize: "16px",
                       }}
                       onClick={() => {
                         deleteComment(cardNum, element);
                       }}
                     >
-                      X
+                      <i class="material-icons">delete</i>
                     </button>
                   </div>
                 </li>
@@ -87,7 +87,7 @@ const CardCard = (props) => {
             }}
           />
           <button className="card-comment__btn" type="submit">
-            Add
+            <i class="material-icons">add</i>
           </button>
         </form>
       </div>

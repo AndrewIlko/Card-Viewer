@@ -75,12 +75,12 @@ const CardFillBlock = (props) => {
           <option>Privat24</option>
           <option>A-bank</option>
         </select>
-        <label>Name Surname</label>
+        <label>Fullname</label>
         <input
           required
           value={ownerName}
           type="text"
-          placeholder="Enter name surname"
+          placeholder="Example Example"
           onChange={(e) => {
             setOwnerName(e.target.value);
           }}
@@ -89,17 +89,17 @@ const CardFillBlock = (props) => {
         <input
           required
           id="card-number"
-          placeholder="Enter number"
+          placeholder="1223 ..."
           value={cardNumber}
           onChange={(e) => {
             setCardNumber(e.target.value);
           }}
         ></input>
-        <label htmlFor="card-exp-date">Expiration Date (MM/YY)</label>
+        <label htmlFor="card-exp-date">Expiration Date</label>
         <input
           required
           id="card-exp-date"
-          placeholder="Enter date"
+          placeholder="MM/YY"
           value={cardDate}
           onChange={(e) => {
             setCardDate(e.target.value);
@@ -109,7 +109,7 @@ const CardFillBlock = (props) => {
         <input
           required
           id="card-cvv"
-          placeholder="CVV"
+          placeholder="*1212*"
           value={cardCVV}
           onChange={(e) => {
             setCardCVV(e.target.value);
